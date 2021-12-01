@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Enfermera Joy</string>
+    //Constantes Login
+    <string name="text_nombreDeLaApp">Enfermera Joy</string>
+    <string name="text_lblRegistrar">¿Aún no eres usuario?   </string>
+    <string name="text_btnRegistrar">Registrate aquí</string>
+    <string name="text_lblContraOlvidada">¿Olvidó su contraseña?</string>
+    <string name="text_btnContraOlvidada">Recuperar</string>
+    <string name="text_lblUsuario">Usuario:</string>
+    <string name="text_lblContra">Contraseña:</string>
+    <string name="text_btnIniciar">Iniciar Sesión</string>
+    <string name="toast_completeCampos">Complete los campos</string>
+    <string name="toast_bienvenido">Bienvenido de nuevo</string>
+    <string name="toast_errorAlIniciar">No se pudo iniciar sesion, compruebe sus datos</string>
+
+    //CONSTANTES DE MENU
+    <string name="text_lblTituloMenu">Menú Principal</string>
+    <string name="text_btnRecetas">Mis Recetas</string>
+    <string name="text_btnDoctores">Mis Doctores</string>
+    <string name="text_btnConsultorios">Mis Consultorios</string>
+    <string name="text_btnTips">Tips de Salud</string>
+    <string name="text_btnPerfil">Mi Perfil</string>
+    <string name="text_perfilNombre"> Nombre: </string>
+    <string name="text_perfilApellido">Apellido: </string>
+    <string name="text_perfilEdad">Edad: </string>
+    <string name="text_perfilSexo">Sexo: </string>
+    <string name="text_perfilPeso">Peso: </string>
+    <string name="text_perfilAltura">Altura: </string>
+    <string name="text_CerrarSesion">Cerrar Sesión</string>
+    <string name="text_cerrarAplicacion">¿Quieres salir de la aplicación?</string>
+    <string name="al_confCerrarSesion">¿Desea cerrar su sesión?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="al_salir">Salir</string>
+    <string name="al_SesionTerminada">Sesion Terminada</string>
+
+    //CONSTANTES PERFIL
+    <string name="titulo_perfil">Mi Perfil</string>
+    <string name="text_lblNombre">Nombre:</string>
+    <string name="text_lblApellidos">Apellidos:</string>
+    <string name="text_lblEdad">Edad:</string>
+    <string name="text_lblSexo">Sexo:</string>
+    <string name="text_lblEstatura">Estatura:</string>
+    <string name="text_lblPeso">Peso:</string>
+    <string name="text_lblDomicilio">Domicilio:</string>
+    <string name="text_lblTelefono">Telefono:</string>
+    <string name="text_lblAlergias">Alergias:</string>
+    <string name="text_lblSangre">Sangre:</string>
+    <string name="text_lblUMF">Unidad Médica Familiar:</string>
+    <string name="text_lblDetalles">Detalles:</string>
+    <string name="text_lblCorreo">Correo:</string>
+    <string name="text_confContra">Confirmar Contraseña:</string>
+    <string name="obligatorio">Obligatorio</string>
+    <string name="tooltip_nombres">Nombre(s):</string>
+    <string name="tooltip_apellidos">Apellido Paterno Apellido Materno</string>
+    <string name="tooltip_edad">Edad Actual</string>
+    <string name="tooltip_sexo">Hombre, Mujer, Etc.</string>
+    <string name="tooltip_estatura">Estatura en Metros</string>
+    <string name="tooltip_peso">Peso en Kg</string>
+    <string name="tooltip_domicilio">Domicilio Actual</string>
+    <string name="tooltip_telefono">Número de celular o telefono de uso frecuente</string>
+    <string name="tooltip_alergias">Listado de Alergias</string>
+    <string name="tooltip_sangre">Tipo de sangre (A+, O+, O-, etc.)</string>
+    <string name="tooltip_umf">Unidad médica afiliada a su seguro</string>
+    <string name="tooltip_detalles">Situaciones especiales como asma, diabetes, hipertension, etc</string>
+
+    //CONSTANTES TRATAMIENTO
+    <string name="text_lblFecha">Fecha:</string>
+    <string name="text_lblMedico">Medico:</string>
+    <string name="text_centroDeSalud">Centro de Salud:</string>
+    <string name="text_lblMedicamento">Medicamento:</string>
+    <string name="text_lblCantidad">Cantidad:</string>
+    <string name="text_lblHorario">Horario:</string>
+    <string name="text_lblNotas">Notas:</string>
+    <string name="text_lblDiagnostico">Diagnostico:</string>
+    <string name="image">.image</string>
+    <string name="text_lblVerReceta">Ver Receta</string>
+    <string name="text_lblNuevaReceta">Nueva Receta</string>
+    <string name="text_lblInfTratamiento">Información del Tratamiento</string>
+    <string name="text_lblInfPersonal">Información Personal</string>
+    <string name="receta_actualizada">Actualizado con éxito</string>
+    <string name="error_actualizar">Error al actualizar</string>
+    <string name="receta_eliminada">Receta eliminada correctamente</string>
+    <string name="error_eliminar">Error al eliminar</string>
+    <string name="titulo_nueva_receta">Nuevo Tratamiento</string>
+    <string name="titulo_ver_tratamiento">Ver Tratamiento</string>
+    <string name="titulo_lista_tratamientos">Lista de Tratamientos</string>
+    <string name="tooltip_fecha">Fecha DD/MM/AAAA</string>
+    <string name="tooltip_medico">Medico que realizo el tratamiento</string>
+    <string name="tooltip_diagnostico">Diagnostico de la Enfermedad</string>
+
+
+
+    //CONSTANTES DOCTORES
+    <string name="text_lblNombreDoc">Nombre:</string>
+    <string name="text_lblApellidoDoc">Apellido:</string>
+    <string name="text_lblEspecialidadDoc">Especialidad:</string>
+    <string name="text_lblPlantaDoc">Planta: </string>
+    <string name="text_lblCedulaDoc">Cedula Profesional:</string>
+    <string name="text_lblDatosDelDoc">Información del Doctor</string>
+    <string name="text_lblVerDoctor">Ver Doctor</string>
+    <string name="text_lblNuevoDoctor">Nuevo Doctor</string>
+    <string name="titulo_nuevo_doctor">Nuevo Doctor</string>
+    <string name="titulo_ver_doctor">Ver Doctor</string>
+    <string name="titulo_lista_doctores">Lista de Doctores</string>
+
+
+    //CONSTANTES CONSULTORIOS
+    <string name="text_lblVerConsultorio">Ver Consultorio</string>
+    <string name="text_lblNuevoConsultorio">Nuevo Consoltorio</string>
+    <string name="titulo_nuevo_cons">Nuevo Consultorio</string>
+    <string name="titulo_ver_cons">Ver Consultorio</string>
+    <string name="titulo_lista_cons">Lista de Consultorios</string>
+    <string name="info_consultorio">Información del Consultorio</string>
+    <string name="tooltip_nombreCons">Nombre del Consultorio</string>
+    <string name="tooltip_espCons">Especialidad Medica del consultorio</string>
+    <string name="tooltip_direccion">Direccion:</string>
+
+
+    //CONSTANTES RECUPERAR CONTRASEÑA
+    <string name="txt_lblRecuperarContra">Recuperar Contraseña</string>
+    <string name="text_lblIngreseSuCorreo">Ingrese el correo electronico con el que se registro:</string>
+    <string name="text_btnRecuperarContra">Enviar correo con mi contraseña</string>
+    <string name="text_ejemploCorreo">correo@ejemplo.com</string>
+    <string name="text_btnYaTengo">Cancelar</string>
+    <string name="text_lblVolverAlLogin">Volver al login</string>
+    <string name="text_ingreseCorreo">Ingrese su correo</string>
+    <string name="text_contraEnviada">Se ha enviado un correo con su contraseña</string>
+    <string name="text_contraNoEnviada">No se ha podido enviar la contraseña, revise el correo</string>
+
+    //TIPS
+    <string name="titulo_lista_tips">Lista de Tips</string>
+    <string name="ver_mas">Ver mas</string>
+
+    //CONSTANTES CONTENT DESCRIPTION
+    <string name="descLogotipo">Logotipo de la aplicacion, enfermera </string>
+    <string name="descEnfermera">Dibujo de enfermera</string>
+    <string name="descAgregar">Botón Agregar</string>
+    <string name="descEliminar">Botón Eliminar</string>
+    <string name="descEditar">Botón Editar</string>
+    <string name="descCancelar">Botón Cancelar</string>
+    <string name="descConfirmarEditar">Botón Guardar Cambios</string>
+    <string name="descCompartir">Botón Compartir</string>
+
+    //NFC
+    <string name="error_detected">NFC TAG no detectado</string>
+    <string name="write_succes">Escritura realizada con exito</string>
+    <string name="write_error">Error de escritura, intente de nuevo</string>
+    <string name="nfc_no_supported">El dispositivo no soporta NFC</string>
+    <string name="nfc_disabled">El NFC no esta activado</string>
+
+    //QR
+    <string name="qr_escaner">Escaner</string>
+    <string name="titulo_escaner">Escaner</string>
+    <string name="qr_instrucciones_1">Ingresa a la herramienta "Escaner" desde otro dispositivo con la Aplicación Enfermera Joy para compartir la información</string>
+    <string name="qr_instrucciones_2">En unos caso sirve bajar el brillo de la pantalla para poder escanear el codigo QR</string>
+    <string name="qr_instrucciones_3">Escanea un codigo generado en otro dispositivo con la aplicación Enfermera Joy o acerca el dispositivo actual a una tarjeta NFC con informacion valida</string>
+</resources>

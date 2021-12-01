@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoDoctor">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:elegantTextHeight="true"
+        android:text="@string/titulo_nuevo_doctor"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/crudNuevoDoctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/crudNuevoDoctor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crudNuevoDoctor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:text="@string/text_lblDatosDelDoc"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/id_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombreND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblNombreDoc"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Fecha DD/MM/AAAA" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/id_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtApellidoND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblApellidoDoc"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Nombre(s)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/star_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEspecialidadND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblEspecialidadDoc"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Apellido Paterno Apellido Materno" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/hospital2_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPlantaND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblPlantaDoc"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Hombre, Mujer, Etc." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/license">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCedulaND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblCedulaDoc"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Medico que realizo el tratamiento" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/phone_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtTelefonoVD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblTelefono"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Medico que realizo el tratamiento" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/email_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCorreoVD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblCorreo"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:tooltipText="Medico que realizo el tratamiento" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/crudNuevoDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCancelarDoc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="cancelar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cancel" />
+
+        <ImageButton
+            android:id="@+id/btnAddDoctor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="confirmarSaveDoctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/add" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

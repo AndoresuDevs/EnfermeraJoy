@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/descLogotipo"
+                app:srcCompat="@drawable/icon" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtCorreoInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                app:startIconDrawable="@drawable/email_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblCorreo"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPasswordInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="42dp"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/password_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblContra"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnIniciarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/text_btnIniciar"
+                android:textSize="20sp"
+                app:icon="@drawable/logout_icon" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lblAunNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:text="@string/text_lblRegistrar"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0" />
+
+                    <Button
+                        android:id="@+id/btnRegistrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="RegistroEnMenu"
+                        android:text="@string/text_btnRegistrar" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/lblOlvidasteContra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/text_lblContraOlvidada"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0" />
+
+                    <Button
+                        android:id="@+id/btnRecuperar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Recuperar"
+                        android:text="@string/text_btnContraOlvidada" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

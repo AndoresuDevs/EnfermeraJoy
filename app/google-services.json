@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1071081710804",
+    "firebase_url": "https://enfermera-joy.firebaseio.com",
+    "project_id": "enfermera-joy",
+    "storage_bucket": "enfermera-joy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071081710804:android:62e75ad4de917c771cc741",
+        "android_client_info": {
+          "package_name": "com.Dimas.enfermerajoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071081710804-ogluhqrqr5cbplq1ade3gll3k118qfeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Dimas.enfermerajoy",
+            "certificate_hash": "510549cc92555b5a912169cf5314818497720f80"
+          }
+        },
+        {
+          "client_id": "1071081710804-rdl1d0pcjfectugfhg3p7a2nvrbt9kbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQc3IjDIlME7r6xUXYMb27HwhPeR99zTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071081710804-rdl1d0pcjfectugfhg3p7a2nvrbt9kbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071081710804:android:c34b538b9f9657661cc741",
+        "android_client_info": {
+          "package_name": "com.andoresudev.enfermerajoynfc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071081710804-rdl1d0pcjfectugfhg3p7a2nvrbt9kbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQc3IjDIlME7r6xUXYMb27HwhPeR99zTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071081710804-rdl1d0pcjfectugfhg3p7a2nvrbt9kbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

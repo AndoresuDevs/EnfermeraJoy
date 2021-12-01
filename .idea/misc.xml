@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/drawable/listview_tips.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout-v26/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_consultorios.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_doctores.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_escaner.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_menu.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_nueva_receta.xml" value="0.22" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_nuevo_consultorio.xml" value="0.22" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_nuevo_doctor.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_recetas.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_recuperar_contra.xml" value="0.25" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_registro.xml" value="0.2930513595166163" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_tips.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_ver_consultorios.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_ver_doctores.xml" value="0.1" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_ver_recetas.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/activity_ver_tips.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/alert_dialog_compartir.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/listview_consultorios.xml" value="0.48824343015214383" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/listview_doctores.xml" value="0.18887015177065766" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/listview_recetas.xml" value="0.4937062937062937" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/listview_tips.xml" value="0.5" />
+        <entry key="..\:/Users/Andre/Documents/Programacion/Android/EnfermeraJoyNFC/app/src/main/res/layout/qr.xml" value="0.19895833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

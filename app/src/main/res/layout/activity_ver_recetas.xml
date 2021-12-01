@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerRecetas">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:elegantTextHeight="true"
+        android:text="@string/titulo_ver_tratamiento"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/crudVerReceta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/crudEditarReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCancelar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="cancelar"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cancel"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnActualizarReceta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="confirmarActualizarReceta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/save"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/crudVerReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnEliminarReceta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="confirmarEliminarReceta"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnEditarReceta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="editar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/edit"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/compartirReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:contentDescription="@string/descCompartir"
+        android:focusable="true"
+        android:foreground="@drawable/compartir"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/white"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/crudVerReceta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crudVerReceta">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="true"
+                android:text="@string/text_lblInfPersonal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_on_primary_emphasis_medium"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/calendar_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtFechaVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblFecha"
+                    android:inputType="date"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Fecha DD/MM/AAAA" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/id_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombreVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblNombre"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Nombre(s)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/id_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtApellidosVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblApellidos"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Apellido Paterno Apellido Materno" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:startIconDrawable="@drawable/weight_icon">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPesoVR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:elegantTextHeight="true"
+                        android:hint="@string/text_lblPeso"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/material_on_primary_emphasis_medium"
+                        android:textSize="24sp"
+                        android:tooltipText="Peso en Kg" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:startIconDrawable="@drawable/heigth_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEstaturaVR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginEnd="5sp"
+                        android:elegantTextHeight="true"
+                        android:hint="@string/text_lblEstatura"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/material_on_primary_emphasis_medium"
+                        android:textSize="24sp"
+                        android:tooltipText="Estatura en Metros" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:startIconDrawable="@drawable/age_icon">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEdadVR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:elegantTextHeight="true"
+                        android:hint="@string/text_lblEdad"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/material_on_primary_emphasis_medium"
+                        android:textSize="24sp"
+                        android:tooltipText="Edad Actual" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/sex_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtSexoVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblSexo"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Hombre, Mujer, Etc." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elegantTextHeight="true"
+                android:text="@string/text_lblInfTratamiento"
+                android:textColor="@color/black"
+                android:textColorHint="@color/material_on_primary_emphasis_medium"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/doctor_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtMedicoVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblMedico"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Medico que realizo el tratamiento" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/hospital2_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUnidadVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="Unidad Medica:"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Centro medico donde se realizó la consulta" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/diagnostic_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDiagnosticoVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblDiagnostico"
+                    android:inputType="textLongMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Diagnostico de la Enfermedad" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:startIconDrawable="@drawable/treatment_icon">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtDetallesVR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:elegantTextHeight="true"
+                    android:hint="@string/text_lblDetalles"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/material_on_primary_emphasis_medium"
+                    android:textSize="24sp"
+                    android:tooltipText="Medicamentos, Horarios, Cantidades, Etc" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

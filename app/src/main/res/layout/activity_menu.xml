@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="158dp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/login_icon" />
+
+        <TableLayout
+            android:layout_width="221dp"
+            android:layout_height="159dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblNombreMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblNombre"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNombreMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblApellidosMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblApellidos"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtApellidosMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblEdadMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblEdad"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEdadMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblEstaturaMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblEstatura"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEstaturaMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblPesoMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblPeso"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPesoMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/lblTelefonoMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lblTelefono"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTelefonoMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Perfil"
+                android:text="@string/text_btnPerfil"
+                android:textSize="20sp"
+                app:icon="@drawable/profile_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnRecetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Recetas"
+                android:text="@string/text_btnRecetas"
+                android:textSize="20sp"
+                app:icon="@drawable/treatment_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnDoctores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Doctores"
+                android:text="@string/text_btnDoctores"
+                android:textSize="20sp"
+                app:icon="@drawable/nurse_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnConsultorios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Consultorios"
+                android:text="@string/text_btnConsultorios"
+                android:textSize="20sp"
+                app:icon="@drawable/hospital_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnEscaner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Escaner"
+                android:text="@string/qr_escaner"
+                android:textSize="20sp"
+                app:icon="@drawable/scanner_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="Tips"
+                android:text="@string/text_btnTips"
+                android:textSize="20sp"
+                app:icon="@drawable/tip_icon"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:isScrollContainer="false"
+                android:onClick="confirmarCerrarSesion"
+                android:text="@string/text_CerrarSesion"
+                android:textSize="20sp"
+                app:icon="@drawable/logout"
+                app:iconGravity="start"
+                app:iconSize="50dp"
+                app:iconTint="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
